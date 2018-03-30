@@ -1,0 +1,19 @@
+package exlcm;
+struct byte_first_t  /* Works */
+{
+    byte item;
+    byte array[2];   // hour, min, sec, hundreth
+}
+
+struct int_array_first_t /* Also works */
+{
+    int8_t array[2];
+    int8_t item;
+}
+
+struct array_first_t  /* Doesn't work? */
+{
+    byte array[2];   // hour, min, sec, hundreth
+    byte item;
+}
+
